@@ -1,11 +1,14 @@
 @import "fonts.scss";
 @import "normalize.scss";
 
+$blue-dark2: #286690;
 $blue-dark: #42a9ed;
 $blue: #3e9cdc;
 $white: #ffffff;
 $black: #000000;
 $gray: #6f6d7b;
+$gray-light: #c4c4c4;
+$gray-dark: #272733;
 
 body {
   font-family: "Lato";
@@ -13,7 +16,7 @@ body {
   color: $white;
 }
 main {
-  min-height: 1000vh;
+  min-height: 100vh;
 }
 .d-flex {
   display: flex;
@@ -48,17 +51,22 @@ main {
 }
 .header-menu-item {
   margin-right: 60px;
+  padding: 5px 0;
   text-transform: uppercase;
   font-size: 13px;
   line-height: 16px;
   font-weight: 600;
   color: $white;
+  transition-duration: 0.3s;
 
   &:first-child {
     color: $blue-dark;
   }
   &:last-child {
     margin-right: 0;
+  }
+  &:hover {
+    color: $blue;
   }
 }
 
@@ -107,6 +115,11 @@ main {
   line-height: 16px;
   border: 1px solid $white;
   border-radius: 4px;
+  transition-duration: 0.3s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 .hero-btn-white {
   display: inline-block;
@@ -118,4 +131,75 @@ main {
   line-height: 16px;
   border: 1px solid $gray;
   border-radius: 4px;
+  transition-duration: 0.3s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+/* ORDER */
+.order {
+  background-image: url(/img/bg-order.png);
+  background-color: $gray-dark;
+}
+.order__container {
+  padding: 120px 0 152px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.order__container-title {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  color: $white;
+  text-transform: uppercase;
+}
+.order__container-subtitle {
+  margin-bottom: 80px;
+  font-size: 18px;
+  line-height: 22px;
+}
+.order__container-icons {
+  align-items: center;
+}
+.order-container {
+  flex-direction: column;
+  align-items: center;
+}
+.order-icons-box {
+  align-items: center;
+}
+.order-icons-square {
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 90px;
+  background-color: $blue;
+  border: 5px solid $blue-dark2;
+  border-radius: 50px;
+}
+.order-icons-dots{
+    margin: 0 -33px 20px -33px;
+}
+.dot {
+  margin-right: 20px;
+  width: 6px;
+  height: 6px;
+  background-color: $gray-light;
+  border-radius: 10px;
+  &:last-child{
+    margin-right: 0;
+  }
+}
+.icons-svg {
+  width: 34px;
+  height: 55px;
+}
+.order-icons-subtitle {
+  max-width: 195px;
+  font-size: 16px;
+  line-height: 19px;
 }
