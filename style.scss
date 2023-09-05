@@ -15,16 +15,20 @@ body {
   font-weight: 400;
   color: $white;
 }
+
 main {
   min-height: 100vh;
 }
+
 .d-flex {
   display: flex;
 }
+
 .wrapper {
   width: inherit;
   padding: 0 375px;
 }
+
 /* HEADER */
 
 .header {
@@ -34,14 +38,17 @@ main {
   height: 100px;
   background-color: rgba(16, 16, 29, 0.9);
 }
+
 .logo-blue {
   color: $blue-dark;
 }
+
 .header__container {
   width: 100%;
   align-items: center;
   justify-content: space-between;
 }
+
 .header__container-logo {
   text-transform: uppercase;
   color: $white;
@@ -49,6 +56,7 @@ main {
   font-size: 28px;
   line-height: 33px;
 }
+
 .header-menu-item {
   margin-right: 60px;
   padding: 5px 0;
@@ -62,9 +70,11 @@ main {
   &:first-child {
     color: $blue-dark;
   }
+
   &:last-child {
     margin-right: 0;
   }
+
   &:hover {
     color: $blue;
   }
@@ -77,10 +87,12 @@ main {
   padding: 203px 0;
   background-image: url(/img/bg-hero.jpg);
 }
+
 .hero__container {
   flex-direction: column;
   color: $black;
 }
+
 .hero__container-title {
   max-width: 780px;
   margin-bottom: 80px;
@@ -89,22 +101,27 @@ main {
   font-size: 48px;
   line-height: 58px;
 }
+
 .title-blue {
   color: $blue;
 }
+
 .hero__container-subtitle {
   margin-bottom: 80px;
 }
+
 .hero-subtitle-title {
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
 }
+
 .hero-subtitle-option {
   font-size: 20px;
   line-height: 24px;
 }
+
 .hero-btn-blue {
   display: inline-block;
   margin-right: 30px;
@@ -121,6 +138,7 @@ main {
     transform: scale(1.1);
   }
 }
+
 .hero-btn-white {
   display: inline-block;
   padding: 12.5px 50px;
@@ -143,12 +161,14 @@ main {
   background-image: url(/img/bg-order.png);
   background-color: $gray-dark;
 }
+
 .order__container {
   padding: 120px 0 152px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 .order__container-title {
   margin-bottom: 30px;
   font-weight: 700;
@@ -157,23 +177,28 @@ main {
   color: $white;
   text-transform: uppercase;
 }
+
 .order__container-subtitle {
   margin-bottom: 80px;
   font-size: 18px;
   line-height: 22px;
 }
+
 .order__container-icons {
   align-items: center;
   flex-wrap: wrap;
   margin-bottom: 80px;
 }
+
 .order-container {
   flex-direction: column;
   align-items: center;
 }
+
 .order-icons-box {
   align-items: center;
 }
+
 .order-icons-square {
   justify-content: center;
   align-items: center;
@@ -184,23 +209,28 @@ main {
   border: 5px solid $blue-dark2;
   border-radius: 50px;
 }
+
 .order-icons-dots {
   margin: 0 -33px 20px -33px;
 }
+
 .dot {
   margin-right: 20px;
   width: 6px;
   height: 6px;
   background-color: $gray-light;
   border-radius: 10px;
+
   &:last-child {
     margin-right: 0;
   }
 }
+
 .icons-svg {
   width: 37%;
   height: 34%;
 }
+
 .order-icons-subtitle {
   max-width: 195px;
   font-size: 16px;
@@ -212,44 +242,58 @@ main {
   border-radius: 10px;
 }
 
-.order__container-form{
+.order__container-form {
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.form-top{
   align-items: center;
   margin-bottom: 30px;
+}
+.form-bottom{
+  margin-bottom: 40px;
 }
 .choices__placeholder {
   opacity: 1;
 }
-.form{
-  width: 368px;
+
+.form {
+  width: 350px;
   margin-right: 30px;
   padding: 13px 10px;
   font-size: 18px;
   line-height: 22px;
   color: $gray-dark;
-  background-color:rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.85);
   border-radius: 3px;
   outline: none;
   border: none;
-  &:last-child{
+
+  &:last-child {
     margin-right: 0;
   }
-  &::placeholder{
+
+  &::placeholder {
     color: $gray-dark;
   }
 }
+
 .choices__inner {
   padding-bottom: 0;
   color: $gray-dark;
   font-size: 18px;
   line-height: 22px;
-  background-color:rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.85);
   z-index: 10;
   position: relative;
   transition-property: border-color, background-color;
   transition-duration: 0.3s;
+
   &:hover {
     background-color: #f5f6f7;
   }
+
   &:active {
     background-color: $gray;
     border-color: transparent;
@@ -262,7 +306,6 @@ main {
 
 .choices__list--dropdown .choices__item--selectable {
   padding-right: 0;
-  transition-duration: 0.3s;
 }
 
 .choices__list--dropdown .choices__item--selectable.is-highlighted {
@@ -270,8 +313,8 @@ main {
   color: $blue-dark;
   background-color: $black;
 }
-.choices.is-focused.is-open.is-flipped
-  > .choices__list.choices__list--dropdown.is-active {
+
+.choices.is-focused.is-open.is-flipped>.choices__list.choices__list--dropdown.is-active {
   padding-top: 0;
   margin-top: 0;
 }
@@ -286,6 +329,7 @@ main {
   color: $white;
   font-size: 16px;
 }
+
 .choices__list--dropdown .choices__list {
   max-height: 180px;
   overflow-y: scroll;
@@ -320,6 +364,7 @@ main {
   background-color: rgba(61, 64, 80, 0.85);
   border-color: transparent;
   color: $white;
+
   .choises__placeholder {
     color: $white;
   }
@@ -331,33 +376,38 @@ main {
   border-radius: 0 0 10px 10px;
   border: 1px solid var(--gray);
 }
+
 .choices__list {
   padding: 2px 4px 2px 0;
+
   &::-webkit-scrollbar {
     width: 7px;
   }
+
   &::-webkit-scrollbar-track {
     border-radius: 10px;
     background-color: #3d4050;
   }
+
   &::-webkit-scrollbar-thumb {
     background-color: $blue;
     border-radius: 10px;
   }
 }
+
 .choices__list--single {
   padding: 12px;
 }
-#choices--material-item-choice-1{
-    display: none;
+
+#choices--material-item-choice-1 {
+  display: none;
 }
-.choices{
+
+.choices {
   width: 370px;
   margin-right: 30px;
   margin-bottom: 0;
 }
-
-
 
 .slidecontainer {
   max-width: 777px;
@@ -365,16 +415,14 @@ main {
 }
 
 .slider {
-  -webkit-appearance: none;
   width: 777px;
   height: 6px;
   border-radius: 5px;
   background: #d3d3d3;
   outline: none;
-  -webkit-transition: .2s;
   transition: opacity .2s;
+  appearance: none;
 }
-
 
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -395,21 +443,37 @@ main {
   cursor: pointer;
 }
 
-.slidecontainer-sub{
+.slidecontainer-sub {
   margin-right: auto;
 }
+
 input[type="file"] {
   display: none;
 }
-.custom-file-upload{
-  border: 2px solid $blue;
-  display: inline-block;
-  padding: 12px 97px;
+
+.custom-file-upload {
+  padding: 12px 97px 12px 121px;
   cursor: pointer;
   color: $gray-dark;
+  background-image: url(/img/list-black.svg);
+  background-repeat: no-repeat;
+  background-position: 27% 50%;
   background-color: $white;
+  border: 2px solid #3e9cdc;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 15px;
   line-height: 18px;
+}
+.form-btn{
+  width: fit-content;
+  padding: 14px 139px;
+  color: $white;
+  background-color: $blue;
+  border: 1px solid $white;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  text-transform: uppercase;
 }
