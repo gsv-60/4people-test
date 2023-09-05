@@ -142,9 +142,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="order__container-form">
+                    <div class="order__container-form d-flex">
 
-                        <select name="select" id="material" class="select-item" tabindex="0"
+                        <select name="select" id="material" class="select-item form" tabindex="0"
                             aria-label="Выберите тип системы">
                             <option value="">Выберите тип системы</option>
                             <option value="1">Sed ut perspiciats</option>
@@ -160,13 +160,34 @@
                             <option value="11">Et harum quidem</option>
                             <option value="12">Temporibus autem</option>
                         </select>
-
+                        <input type="email" class="form-email form" name="email" placeholder="Ваш e-mail">
+                        <input type="text" class="form-name form" name="name" placeholder="Ваше имя">
+                    </div>
+                    <div class="d-flex">
+                        <div class="slidecontainer">
+                            <div class="d-flex"><span class="slidecontainer-sub">Sed ut perspiciatis, unde omnis iste natus</span><span
+                                    class="slidercontainer-persent"><span id="demo"></span>%</span></div>
+                            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                        </div>
+                        <label for="file-upload" class="custom-file-upload">
+                             Прикрепите файл
+                        </label>
+                        <input type="file" id="file-upload">
                     </div>
                 </div>
             </div>
             </div>
         </section>
     </main>
+    <script>
+        let slider = document.getElementById("myRange");
+        let output = document.getElementById("demo");
+        output.innerHTML = slider.value;
+
+        slider.oninput = function () {
+            output.innerHTML = this.value;
+        }
+    </script>
 </body>
 
 </html>

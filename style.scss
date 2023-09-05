@@ -212,25 +212,41 @@ main {
   border-radius: 10px;
 }
 
-
+.order__container-form{
+  align-items: center;
+  margin-bottom: 30px;
+}
 .choices__placeholder {
   opacity: 1;
 }
-
-.choices__inner {
-  min-height: 48px;
-  padding-bottom: 0;
+.form{
   width: 368px;
+  margin-right: 30px;
+  padding: 13px 10px;
   font-size: 18px;
   line-height: 22px;
   color: $gray-dark;
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color:rgba(255, 255, 255, 0.85);
   border-radius: 3px;
+  outline: none;
+  border: none;
+  &:last-child{
+    margin-right: 0;
+  }
+  &::placeholder{
+    color: $gray-dark;
+  }
+}
+.choices__inner {
+  padding-bottom: 0;
+  color: $gray-dark;
+  font-size: 18px;
+  line-height: 22px;
+  background-color:rgba(255, 255, 255, 0.85);
   z-index: 10;
   position: relative;
   transition-property: border-color, background-color;
   transition-duration: 0.3s;
-  transition-timing-function: ease;
   &:hover {
     background-color: #f5f6f7;
   }
@@ -261,8 +277,6 @@ main {
 }
 
 .choices__list.choices__list--dropdown {
-  padding-top: 16px;
-  margin-top: -21px;
   border: 1px solid #3d4050;
   background-color: $black;
 }
@@ -302,7 +316,7 @@ main {
 
 .is-open .choices__inner {
   padding: 0;
-  border-radius: 10px;
+  border-radius: 3px;
   background-color: rgba(61, 64, 80, 0.85);
   border-color: transparent;
   color: $white;
@@ -312,7 +326,7 @@ main {
 }
 
 .choices__list--dropdown {
-  width: 364px;
+  width: 370px;
   z-index: 1;
   border-radius: 0 0 10px 10px;
   border: 1px solid var(--gray);
@@ -336,4 +350,66 @@ main {
 }
 #choices--material-item-choice-1{
     display: none;
+}
+.choices{
+  width: 370px;
+  margin-right: 30px;
+  margin-bottom: 0;
+}
+
+
+
+.slidecontainer {
+  max-width: 777px;
+  margin-right: 22px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 777px;
+  height: 6px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  border: 3px solid $blue-dark2;
+  background: $blue-dark;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+.slidecontainer-sub{
+  margin-right: auto;
+}
+input[type="file"] {
+  display: none;
+}
+.custom-file-upload{
+  border: 2px solid $blue;
+  display: inline-block;
+  padding: 12px 97px;
+  cursor: pointer;
+  color: $gray-dark;
+  background-color: $white;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
 }
