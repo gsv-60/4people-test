@@ -795,10 +795,13 @@ input[type="file"] {
   background-color: $white;
   border: 2px solid #3e9cdc;
   text-transform: uppercase;
+  transition-duration: .3s;
   font-weight: 600;
   font-size: 15px;
   line-height: 18px;
-
+  &:hover{
+    background-color: $gray-light;
+  }
   @media(max-width: 600px) {
     width: 280px;
     padding: 12px 0;
@@ -819,7 +822,10 @@ input[type="file"] {
   line-height: 18px;
   text-transform: uppercase;
   cursor: pointer;
-
+  transition-duration: .3s;
+  &:hover{
+    background-color: $blue-dark2;
+  }
   @media(max-width: 600px) {
     padding: 14px 94px;
   }
