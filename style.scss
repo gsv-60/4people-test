@@ -235,7 +235,7 @@ main {
 .hero {
   margin-top: -100px;
   padding: 203px 0;
-  background-image: url(/img/bg-hero.jpg);
+  background-image: url(img/bg-hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -357,7 +357,7 @@ main {
 
 /* ORDER */
 .order {
-  background-image: url(/img/bg-order.png);
+  background-image: url(img/bg-order.png);
   background-color: $gray-dark;
 }
 
@@ -635,7 +635,7 @@ main {
 .choices[data-type*="select-one"]:after {
   z-index: 10;
   border: none;
-  background-image: url(/img/choise-arrow-down.svg);
+  background-image: url(img/choise-arrow-down.svg);
   height: 9px;
   width: 13px;
   background-repeat: no-repeat;
@@ -646,7 +646,7 @@ main {
 }
 
 .choices[data-type*="select-one"].is-open:after {
-  background-image: url(/img/choise-arrow-up.svg);
+  background-image: url(img/choise-arrow-up.svg);
   margin: 0;
   top: 40%;
 }
@@ -789,7 +789,7 @@ input[type="file"] {
   padding: 12px 97px 12px 121px;
   cursor: pointer;
   color: $gray-dark;
-  background-image: url(/img/list-black.svg);
+  background-image: url(img/list-black.svg);
   background-repeat: no-repeat;
   background-position: 27% 50%;
   background-color: $white;
