@@ -7,6 +7,7 @@
     <script defer src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css" />
     <script defer src="choices.js"></script>
+    <script defer src="burger.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>4people-test</title>
 </head>
@@ -16,6 +17,9 @@
         <div class="wrapper d-flex">
             <div class="header__container d-flex">
                 <a href="" class="header__container-logo">LoremIpsum.<span class="logo-blue">Net</span></a>
+                <div id="burger-menu" class="header__container-burger">
+                    <div class="burger-item"></div>
+                </div>
                 <div class="header__container-menu d-flex">
                     <a href="#" class="header-menu-item">Бизнес</a>
                     <a href="#" class="header-menu-item">О нас</a>
@@ -23,6 +27,12 @@
                     <a href="#" class="header-menu-item">Оформить заказ</a>
                 </div>
             </div>
+        </div>
+        <div id="burger" class="burger d-flex">
+                <a href="#" class="header-menu-item">Бизнес</a>
+                <a href="#" class="header-menu-item">О нас</a>
+                <a href="#" class="header-menu-item">Цены</a>
+                <a href="#" class="header-menu-item">Оформить заказ</a>
         </div>
     </header>
     <main>
@@ -38,7 +48,7 @@
                         <div class="hero-subtitle-option">- Sit voluptatem accusantium doloremque laudantium</div>
                         <div class="hero-subtitle-option">- Sed ut perspiciatis, unde omnis iste natus error</div>
                     </div>
-                    <div class="hero__container-btn">
+                    <div class="hero__container-btn d-flex">
                         <a href="#" class="hero-btn-blue">Заказать</a>
                         <a href="#" class="hero-btn-white">Подробнее</a>
                     </div>
@@ -217,22 +227,22 @@
 
                     </div>
                     <div class="footer-container-social d-flex">
-                        <div class="footer-item d-flex">
+                        <a href="mailto:info@ipsum228.com"  class="footer-item d-flex">
                             <svg class="pay-svg">
                                 <use xlink:href="img/sprite.svg#mail-b"></use>
                             </svg>
                             <div class="pay-sub">
                                 info@ipsum228.com
                             </div>
-                        </div>
-                        <div class="footer-item d-flex">
+                        </a>
+                        <a href="#" class="footer-item d-flex">
                             <svg class="pay-svg">
                                 <use xlink:href="img/sprite.svg#vk"></use>
                             </svg>
                             <div class="pay-sub">
                                 Мы вконтакте
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
